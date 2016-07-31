@@ -35,6 +35,42 @@
        #f]
       [else (eqlist? s1 s2)])))
 
+(define member?
+  (lambda (a lat)
+    (letrec
+        [(M? (lambda (lat)
+               (cond
+                 [(null? lat) #f]
+                 [else (or (eqan? (car lat) a)
+                           (M? (cdr lat)))])))]
+      (M? lat))))
+
+(define first
+  (lambda (p)
+    (car p)))
+
+(define second
+  (lambda (p)
+    (cadr p)))
+
+(define build
+  (lambda (s1 s2)
+    (cons s1 (cons s2 '()))))
+
+(define firsts
+  (lambda (l)
+    (if (null? l)
+        '()
+        (cons (caar l)
+              (firsts (cdr l))))))
+
 (provide atom?)
 (provide one?)
 (provide eqan?)
+(provide eqlist?)
+(provide equal?)
+(provide member?)
+(provide first)
+(provide second)
+(provide build)
+(provide firsts)
