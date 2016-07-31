@@ -1,3 +1,5 @@
+#lang racket
+
 ;;;; The Five Rules
 
 ;; The law of Car

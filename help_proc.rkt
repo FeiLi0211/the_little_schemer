@@ -1,3 +1,5 @@
+#lang racket
+
 (define atom?
   (lambda (x)
     (and (not (null? x))
@@ -6,3 +8,6 @@
 (define one?
   (lambda (n)
     (= n 1)))
+
+(provide atom?)
+(provide one?)

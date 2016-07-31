@@ -1,3 +1,5 @@
+#lang racket
+
 ;;;; The Ten Commandments
 
 ;; The First Commandment

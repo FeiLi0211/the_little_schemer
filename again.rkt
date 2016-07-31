@@ -1,4 +1,10 @@
+#lang racket
+
+(require "help_proc.rkt")
+
 ;;;; 2. Do It, Do It Again, and Again, and Again ...
+
+
 
 (define lat?
   (lambda (l)

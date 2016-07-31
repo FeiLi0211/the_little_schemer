@@ -1,3 +1,7 @@
+#lang racket
+
+(require "help_proc.rkt")
+
 ;;;; 1. Toys
 
 (atom? 'atom)
