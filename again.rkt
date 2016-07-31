@@ -4,8 +4,6 @@
 
 ;;;; 2. Do It, Do It Again, and Again, and Again ...
 
-
-
 (define lat?
   (lambda (l)
     (if (null? l)
