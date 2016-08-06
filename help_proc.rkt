@@ -64,6 +64,13 @@
         (cons (caar l)
               (firsts (cdr l))))))
 
+(define seconds
+  (lambda (l)
+    (if (null? l)
+        '()
+        (cons (cadar l)
+              (seconds (cdr l))))))
+
 (provide atom?)
 (provide one?)
 (provide eqan?)
@@ -74,3 +81,4 @@
 (provide second)
 (provide build)
 (provide firsts)
+(provide seconds)

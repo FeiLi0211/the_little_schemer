@@ -243,9 +243,15 @@
 (fun? '((d 4) (b 0) (b 9) (e 5) (g 4)))
 
 
+#|
 (define fullfun?
   (lambda (fun)
     (fun? (revrel fun))))
+|#
+
+(define fullfun?
+  (lambda (fun)
+    (set? (seconds fun))))
 
 (fullfun? '((8 3) (4 2) (7 6) (6 2) (3 4)))
 
