@@ -71,6 +71,12 @@
         (cons (cadar l)
               (seconds (cdr l))))))
 
+(define pick
+  (lambda (n l)
+    (if (one? n)
+        (car l)
+        (pick (sub1 n) (cdr l)))))
+
 (provide atom?)
 (provide one?)
 (provide eqan?)
@@ -82,3 +88,4 @@
 (provide build)
 (provide firsts)
 (provide seconds)
+(provide pick)
