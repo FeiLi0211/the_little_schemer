@@ -6,4 +6,6 @@
 * Recursive
 * Value 这个基于类型的求值器不太实用啊！！！
 
-~~上善如水 道法自然 知行合一~~
+> 上善如水 道法自然 知行合一
+
+> Thanks for "Daniel P. Friedman" & "Matthias Felleisen"
